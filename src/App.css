@@ -36,3 +36,125 @@
     transform: rotate(360deg);
   }
 }
+
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-display: swap;
+  src: url(./font/Roboto-Regular.woff) format("woff"),
+      url(./font/Roboto-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  font-display: swap;
+  src: url(./font/Roboto-Medium.woff) format("woff"),
+      url(./font/Roboto-Medium.woff2) format("woff2");
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sprites {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1232px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.guests {
+  background-color: #eaf0f9;
+  position: relative;
+}
+
+.guests-loves__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 106px;
+}
+
+.guests-loves__title h2 {
+  color: #383838;
+}
+
+.guest-loves {
+  padding: 120px 0;
+}
+
+.guest-loves__slider-wrapper {
+  position: relative;
+}
+
+.guest-loves__swiper-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.guest-loves__swiper-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.guests-loves figure {
+  color: #3077c6;
+  line-height: 28px;
+  margin: 0;
+  overflow: hidden;
+  width: 25%;
+}
+
+.guests-loves__destination {
+  display: flex;
+  flex-direction: column;
+}
+
+.guests-loves__image-photo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.guests-loves__dsc-wrapper span {
+  font-size: 24px;
+}
+
+.guests-loves__hotel {
+  padding: 24px 0;
+  color: #3077c6;
+}
+
+.guests-loves__dsc-city {
+  color: #bfbfbf;
+}
+
+.guests-loves__hotel {
+  color: #3077c6;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 24px 0;
+}
+
+.guests-loves__city {
+  color: #bfbfbf;
+  font-size: 24px;
+  line-height: 28px;
+}
