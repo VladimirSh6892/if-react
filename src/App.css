@@ -98,6 +98,13 @@ h2 {
   padding: 120px 0;
 }
 
+.guests-loves__image {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 121px;
+}
+
 .guest-loves__slider-wrapper {
   position: relative;
 }
