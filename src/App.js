@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
-import {data} from "./constants/array"
+import Hotel from './hotels';
+import { data } from "./constants/array";
 
 function App() {
   return (
@@ -10,19 +11,9 @@ function App() {
         <div className="guest-loves__slider-wrapper">
           <div className="guest-loves__swiper-container">
             <div className="guests-loves__image guest-loves__swiper-wrapper">
-              <figure>
-                <div>
-                  <img
-                    className="guests-loves__image-photo"
-                    src={data.imageUrl}
-                    alt={data.country}
-                  />
-                </div>
-                <figcaption className="guests-loves__destination">
-                  <span className="guests-loves__hotel">{data.name}</span>
-                  <span className="guests-loves__city">{data.city}</span>
-                </figcaption>
-              </figure>
+              {data.map((hotels) => (
+                <Hotel key={hotels.id} hotels={hotels} />
+              ))}
             </div>
           </div>
         </div>
