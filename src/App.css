@@ -71,6 +71,7 @@
   margin: 0 auto;
 }
 
+
 h2 {
   font-weight: 500;
   font-size: 40px;
@@ -82,44 +83,20 @@ h2 {
   background-color: #eaf0f9;
   position: relative;
 }
-
 .guests-loves__title {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 106px;
 }
-
 .guests-loves__title h2 {
   color: #383838;
 }
-
-.guest-loves {
-  padding: 120px 0;
+.guests-loves__image-wrapper {
+  object-fit: cover;
+  object-position: center;
 }
 
-.guests-loves__image {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  padding-bottom: 121px;
-}
-
-.guest-loves__slider-wrapper {
-  position: relative;
-}
-
-.guest-loves__swiper-container {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-
-.guest-loves__swiper-wrapper {
-  display: flex;
-  width: 100%;
-  height: 100%;
-}
 .guests-loves figure {
   color: #3077c6;
   line-height: 28px;
@@ -127,7 +104,6 @@ h2 {
   overflow: hidden;
   width: 25%;
 }
-
 .guests-loves__destination {
   display: flex;
   flex-direction: column;
@@ -139,18 +115,57 @@ h2 {
   object-fit: cover;
   object-position: center;
 }
-
 .guests-loves__dsc-wrapper span {
   font-size: 24px;
 }
-
 .guests-loves__hotel {
   padding: 24px 0;
   color: #3077c6;
 }
-
 .guests-loves__dsc-city {
   color: #bfbfbf;
+}
+.guest-loves {
+  padding: 120px 0;
+}
+.guest-loves__slider-wrapper {
+  position: relative;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+.swiper-button-prev {
+  transform: rotate(0.5turn);
+}
+.swiper-button-next,
+.swiper-button-prev {
+  background-image: url(./components/img/arrow.svg);
+  top: 37% !important;
+  width: 50px !important;
+}
+.swiper-button-next {
+  right: -20px !important;
+}
+.swiper-button-prev {
+  left: -10px !important;
+}
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+  display: none;
+}
+.guest-loves__swiper-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.guest-loves__swiper-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.guests-loves__swiper-slide {
+  flex-shrink: 0;
 }
 
 .guests-loves__hotel {
