@@ -1,7 +1,6 @@
 import React from "react";
 import "./App.css";
-import Hotel from './hotels';
-import { data } from "./constants/array";
+import Hotel from "./components/hotels";
 
 function App() {
   return (
@@ -10,10 +9,8 @@ function App() {
         <h2 className="guests-loves__title">Homes guests loves</h2>
         <div className="guest-loves__slider-wrapper">
           <div className="guest-loves__swiper-container">
-            <div className="guests-loves__image guest-loves__swiper-wrapper">
-              {data.map((hotels) => (
-                <Hotel key={hotels.id} hotels={hotels} />
-              ))}
+            <div className="guests-loves__image__swiper-wrapper">
+              <Hotel />
             </div>
           </div>
         </div>
