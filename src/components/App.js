@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Hotel from "./components/hotels";
+import Hotel from "./Hotel";
 
 function App() {
   return (
