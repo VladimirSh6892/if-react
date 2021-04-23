@@ -1,0 +1,70 @@
+.guests-loves__image-wrapper {
+    object-fit: cover;
+    object-position: center;
+}
+
+.guests-loves figure {
+    color: #3077c6;
+    line-height: 28px;
+    margin: 0;
+    overflow: hidden;
+    width: 25%;
+}
+
+.guests-loves__destination {
+    display: flex;
+    flex-direction: column;
+}
+
+.guests-loves__image-photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-button-prev {
+    transform: rotate(0.5turn);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-image: url(./img/arrow.svg);
+    top: 37% !important;
+    width: 50px !important;
+}
+
+.swiper-button-next {
+    right: -20px !important;
+}
+
+.swiper-button-prev {
+    left: -10px !important;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    display: none;
+}
+
+.guests-loves__swiper-slide {
+    flex-shrink: 0;
+}
+
+.guests-loves__hotel {
+    color: #3077c6;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 24px 0;
+}
+
+.guests-loves__city {
+    color: #bfbfbf;
+    font-size: 24px;
+    line-height: 28px;
+}
