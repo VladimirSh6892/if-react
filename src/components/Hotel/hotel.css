@@ -14,6 +14,7 @@
 .guests-loves__destination {
     display: flex;
     flex-direction: column;
+    padding-bottom: 120px;
 }
 
 .guests-loves__image-photo {
@@ -34,7 +35,7 @@
 
 .swiper-button-next,
 .swiper-button-prev {
-    background-image: url(./img/arrow.svg);
+    background-image: url(./arrow.svg);
     top: 37% !important;
     width: 50px !important;
 }
@@ -68,3 +69,4 @@
     font-size: 24px;
     line-height: 28px;
 }
+

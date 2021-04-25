@@ -1,9 +1,7 @@
 import React from 'react';
 import SwiperCore, { Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { data } from '../constants/array';
-import './Hotel.css';
-import 'swiper/swiper-bundle.min.css';
+import { data } from '../../constants/array';
 
 SwiperCore.use([Navigation]);
 
