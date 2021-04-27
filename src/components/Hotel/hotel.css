@@ -36,16 +36,16 @@
 .swiper-button-next,
 .swiper-button-prev {
     background-image: url(./arrow.svg);
-    top: 37% !important;
+    top: 30% !important;
     width: 50px !important;
 }
 
 .swiper-button-next {
-    right: -20px !important;
+    right: -3px !important;
 }
 
 .swiper-button-prev {
-    left: -10px !important;
+    left: -3px !important;
 }
 
 .swiper-button-next.swiper-button-disabled,
