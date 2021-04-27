@@ -1,9 +1,9 @@
 @import 'swiper/swiper-bundle.min.css';
-@import './Container/container.css';
-@import './GuestLoves/guestLoves.css';
-@import './Hotel/hotel.css';
-@import './Section/section.css';
-@import './Title/title.css';
+@import './components/Container/container.css';
+@import './components/GuestLoves/guestLoves.css';
+@import './components/Hotel/hotel.css';
+@import './components/Section/section.css';
+@import './components/Title/title.css';
 
 body {
   margin: 0;
