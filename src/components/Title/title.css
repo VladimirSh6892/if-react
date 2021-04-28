@@ -1,0 +1,14 @@
+h2 {
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 120px;
+    color: #383838;
+}
+
+.guests-loves__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 106px;
+}
