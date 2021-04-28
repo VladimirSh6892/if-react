@@ -3,7 +3,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-	entry: './src/components/index.js',
+	entry: './src/index.js',
 	mode: 'production',
 	output: {
 		path: path.resolve(__dirname, 'dist'),
@@ -56,7 +56,7 @@ module.exports = {
 	plugins: [
 		new HTMLWebpackPlugin({
 			inject: true,
-			template: './src/components/index.html',
+			template: './src/index.html',
 		}),
 		new CleanWebpackPlugin(),
 	],
