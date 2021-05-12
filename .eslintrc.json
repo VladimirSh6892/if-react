@@ -22,6 +22,7 @@
         "react/jsx-filename-extension":0,
         "indent": ["error", "tab"],
         "no-tabs": 0,
+        "eslint no-mixed-spaces-and-tabs": "smart-tabs",
         "import/no-extraneous-dependencies":0,
         "react/jsx-indent":0,
         "jsx-a11y/anchor-is-valid":0,
