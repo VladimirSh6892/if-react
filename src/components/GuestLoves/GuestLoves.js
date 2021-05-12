@@ -8,7 +8,7 @@ export default function GuestLoves() {
 	return (
 		<Section>
 			<Container>
-				<Title text="Homes guests loves" />
+				<Title className="guests-loves__title" text="Homes guests loves" />
 				<div className="guest-loves__slider-wrapper">
 					<div className="guest-loves__swiper-container">
 						<div className="guests-loves__image__swiper-wrapper">
