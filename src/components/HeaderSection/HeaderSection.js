@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import Container from '../Container/Container';
 import Section from '../Section/Section';
 import Title from '../Title/Title';
@@ -35,6 +36,7 @@ export default class HeaderSection extends Component {
 			alert('Enter search data, please');
 			return;
 		}
+
 		const text = new RegExp(`.*${searchHotel}+.*`, 'gim');
 		const result = [];
 		dataHotel.forEach((currentHotel) => {
@@ -43,6 +45,7 @@ export default class HeaderSection extends Component {
 				result.push(currentHotel);
 			}
 		});
+
 		this.setState({ searchResult: result });
 		this.setState({ count: count + 1 });
 	}
@@ -94,7 +97,7 @@ export default class HeaderSection extends Component {
 								<input type="text" id="people" required name="people" autoComplete="off" />
 								<label htmlFor="people" className="people" id="label_people">Adults - Children - Room</label>
 							</div>
-							<div className="heder-form-drop" id="heder-form-drop" />
+							<div className="header-form-drop" id="header-form-drop" />
 							<div className="header-form__input-form col-2">
 								<input type="submit" value="Search" onClick={this.handleSearchResult} />
 							</div>

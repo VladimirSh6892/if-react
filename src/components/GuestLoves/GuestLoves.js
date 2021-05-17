@@ -1,8 +1,10 @@
 import React from 'react';
+
 import Section from '../Section/Section';
 import Container from '../Container/Container';
 import Title from '../Title/Title';
 import Hotel from '../Hotel/Hotel';
+
 import dataHotel from '../../constants/array';
 
 export default function GuestLoves() {
