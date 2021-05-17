@@ -10,5 +10,6 @@ module.exports = merge(prodConfig, {
         historyApiFallback: true,
         hot: true,
         open: true,
-    },       
+    },
+    devtool: 'inline-source-map',       
 });
