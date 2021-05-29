@@ -40,7 +40,7 @@ export default class HeaderSection extends Component {
 
 		const text = new RegExp(`.*${searchHotel}+.*`, 'gim');
 		const result = [];
-		const dataHotel = await getData({ url: API_URL, text: searchHotel });
+		const dataHotel = await getData({ url: API_URL, text: searchHotel, search: result });
 		dataHotel.forEach((currentHotel) => {
 			const tempValue = currentHotel.country + currentHotel.city + currentHotel.name;
 			if (!(tempValue.search(text))) {

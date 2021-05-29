@@ -1,6 +1,6 @@
-export default function getData({ url, text, options }) {
-	const finalyUrl = url + 'search=' + text;
-	const response = fetch(`${finalyUrl}`, {
+export default function getData({ url, text, options, search }) {
+	const receivedUrl = url + search + text;
+	const response = fetch(`${receivedUrl}`, {
 		...options,
 		method: 'GET',
 	}).then((answer) => {
