@@ -7,7 +7,8 @@ import Hotel from '../Hotel/Hotel';
 
 import './HeaderSection.css';
 
-import dataHotel from '../../constants/array';
+import API_URL from '../../constants/API_URL';
+import getData from '../../constants/getData/getData';
 
 import appleStore from './apple-store.svg';
 import googlePlay from './google-play.svg';
@@ -29,7 +30,7 @@ export default class HeaderSection extends Component {
 		this.setState({ searchHotel: event.target.value });
 	}
 
-	handleSearchResult = (event) => {
+	handleSearchResult = async  (event) => {
 		event.preventDefault();
 		const { searchHotel, count } = this.state;
 		if (searchHotel.length === 0) {
@@ -39,6 +40,7 @@ export default class HeaderSection extends Component {
 
 		const text = new RegExp(`.*${searchHotel}+.*`, 'gim');
 		const result = [];
+		const dataHotel = await getData({ url: API_URL, text: searchHotel, search: result });
 		dataHotel.forEach((currentHotel) => {
 			const tempValue = currentHotel.country + currentHotel.city + currentHotel.name;
 			if (!(tempValue.search(text))) {
